@@ -75,6 +75,14 @@ module.exports = (options) => ({
       },
     }),
     new webpack.NamedModulesPlugin(),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    }),
+    new webpack.ProvidePlugin({
+      Tether: "tether",
+    }),
   ]),
   resolve: {
     modules: ['app', 'node_modules'],

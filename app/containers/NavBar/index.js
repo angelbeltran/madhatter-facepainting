@@ -16,33 +16,27 @@ import makeSelectNavBar from './selectors';
 export class NavBar extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className='container' style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-        <div className='row justify-content-center'>
-          <div className='col-4'>
-            <nav className='navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top'>
-              <div className='navbar-brand'>
-                Madhatter Face Painting
-              </div>
-              <div className='collapse navbar-collapse'>
-                <ul className='navbar-nav'>
-                  <li className='nav-item'>
-                    <a className='nav-link' href='#'>Home <span className='sr-only'>(current)</span></a>
-                  </li>
-                  <li className='nav-item'>
-                    <a className='nav-link' href='#'>Album</a>
-                  </li>
-                  <li className='nav-item'>
-                    <a className='nav-link' href='#'>Events</a>
-                  </li>
-                  <li className='nav-item'>
-                    <a className='nav-link' href='#'>Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+      <nav className='navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse'>
+        <div className='navbar-brand'>
+          Madhatter Face Painting
         </div>
-      </div>
+        <div className='collapse navbar-collapse'>
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>Home <span className='sr-only'>(current)</span></a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>Album</a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>Events</a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     );
   }
 }
