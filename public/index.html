@@ -7,19 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <title>Madhatter Facepainting</title>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->
     <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
 
-    <div style="background-color: #f7f7f7;">
 
-      <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-        <div class="navbar-brand">
+      <!--<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">-->
+      <!--
+      <nav class="navbar navbar-toggleable-sm navbar-light fixed-top bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
           Madhatter Face Painting
-        </div>
-        <div class="collapse navbar-collapse">
+        </a>
+
+        <div class="navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -36,68 +44,60 @@
           </ul>
         </div>
       </nav>
+      -->
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
 
-      <div class="container" style="padding-top: 70px; padding-bottom: 30px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-        <!-- Intro and profile pictures -->
+      <div class="container-fluid" style="padding-top: 20px; padding-bottom: 30px;">
+
         <div class="row">
-
-          <!-- Home page body left -->
-          <div class="col-6">
-            <ul>
-              <li>
-                <ul>
-                  <li>Jennifer Bush</li>
-                  <li>Cedar City, Southern Utah</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>Karen Stephens</li>
-                  <li>Cedar City, Southern Utah</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>Ciara Beltran</li>
-                  <li>Eugene, Oregon</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>Contact us at madhatter.facepainting@gmail.com</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Home page body right -->
-          <div class="col-6">
-            <div class="container embed-responsive-1by1 rounded">
-              <div class="row no-gutters">
-                <div class="col-6">
-                  <div class="embed-responsive-1by1">
-                    <img src="img/mad_hatter_1.jpg" class="img-fluid"/>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="embed-responsive-1by1">
-                    <img src="img/mad_hatter_2.jpg" class="img-fluid"/>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="embed-responsive-1by1">
-                    <img src="img/mad_hatter_3.jpg" class="img-fluid"/>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="embed-responsive-1by1">
-                    <img src="img/mad_hatter_4.jpg" class="img-fluid"/>
-                  </div>
-                </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="img/mad_hatter_1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/mad_hatter_2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/mad_hatter_3.jpg" alt="Third slide">
               </div>
             </div>
-
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
@@ -194,7 +194,6 @@
         </div>
       </div>
 
-    </div>
 
   </body>
 </html>
