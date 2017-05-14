@@ -1,3 +1,3 @@
 # madhatter-facepainting
 
-The website for madhatter facepainting.
+The website for Madhatter Facepainting.
