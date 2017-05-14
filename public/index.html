@@ -51,29 +51,53 @@
       </div>
     </nav>
 
+    <!-- Head / Carousel Container -->
     <div class="container-fluid" style="padding-bottom: 30px; padding-left: 0px; padding-right: 0px;">
 
+      <!-- Carousel -->
       <div class="row no-gutters justify-content-center">
         <div id="carouselExampleIndicators" class="col carousel slide" data-ride="carousel">
+
+          <!-- Floating Jumbotron -->
+          <div style="position: absolute; z-index: 1; left: 5%; height: 100%; width: 40%; background-color: rgba(127, 0, 127, 0.8);">
+            <div class="jumbotron-fluid">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                  <div class="col align-self-center">
+                    <h1 class="display-3">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-            <div class="row no-gutters carousel-item active">
+            <div class="row no-gutters justify-content-end carousel-item active">
               <img class="col d-block img-fluid" src="img/man_tiara.jpg" alt="First slide">
             </div>
-            <div class="row no-gutters carousel-item">
+            <div class="row no-gutters justify-content-end carousel-item">
               <img class="col d-block img-fluid" src="img/pirate_boy.jpg" alt="Second slide">
             </div>
-            <div class="row no-gutters carousel-item">
+            <div class="row no-gutters justify-content-end carousel-item">
               <img class="col d-block img-fluid" src="img/dead_couple.jpg" alt="Third slide">
             </div>
-            <div class="row no-gutters carousel-item">
+            <div class="row no-gutters justify-content-end carousel-item">
               <img class="col d-block img-fluid" src="img/kambria_princess.jpg" alt="Fourth slide">
             </div>
-            <div class="row no-gutters carousel-item">
+            <div class="row no-gutters justify-content-end carousel-item">
               <img class="col d-block img-fluid" src="img/blue_butterfly.jpg" alt="Fifth slide">
             </div>
           </div>
@@ -88,5 +112,6 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>
