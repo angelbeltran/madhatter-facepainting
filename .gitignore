@@ -14,4 +14,4 @@ npm-debug.log
 *.swo
 
 # images, because they are private
-*.jpg
+#*.jpg

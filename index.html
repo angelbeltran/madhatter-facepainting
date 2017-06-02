@@ -16,101 +16,135 @@
     <!-- Display a message if JS has been disabled on the browser. -->
     <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
 
-    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand">Madhatter Facepainting</a>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="album">Album</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Head / Carousel Container -->
-    <div class="container-fluid" style="padding-bottom: 30px; padding-left: 0px; padding-right: 0px;">
+    <!--<div class="container-fluid" style="padding-left: 0px; padding-right: 0px; background-image: url('img/vines_by_SheisprettyStockk.png'); background-size: 259px 259px; background-color: rgb(50, 100, 50); background-position: center center">-->
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px; background-image: url('img/bushs_and_vines_png_stock_photo_0059_copy_by_annamae22-da48ct8.png'); background-size: cover; background-color: rgb(255, 255, 255); background-position: top center">
       <div class="row no-gutters justify-content-center">
+        <!--<div class="col-1" style="background-image: url('img/vines_by_SheisprettyStockk.png'); background-size: 25px 50px">
+          Left Column
+        </div>-->
 
-        <!-- Jumbotron -->
-        <div class="col-5 align-self-stretch d-flex" style="background-color: rgba(127, 0, 127, 0.8);">
-          <div class="jumbotron-fluid align-self-center">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <h1 class="display-3">Hello, world!</h1>
-                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                  <hr class="my-4">
-                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                  <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                  </p>
+        <div class="col-9">
+          <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
+            <div class="row justify-content-center no-gutters">
+              <div class="col">
+                <!-- max-width: 837.5 912.5 -->
+                <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand">Madhatter Facepainting</a>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="events">Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="album">Album</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Head / Carousel Container -->
+            <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+              <div class="row no-gutters">
+
+                <!-- Jumbotron -->
+                <!--<div class="col-5 d-flex align-items-center" style="background-color: rgba(127, 0, 127, 0.95);">-->
+                <div class="col-5 d-flex align-items-center" style="background-color: rgba(90, 180, 80, 0.60);">
+                  <div class="jumbotron-fluid text-center">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col">
+                          <h1 class="display-5 text-center">Mad Hatter Face Painting</h1>
+                          <hr class="my-4">
+                          <p class="lead">Southern Utah's premier face painting group</p>
+                          <hr class="my-4">
+                          <p>Whether it be a birthday party, a business event, or a halloween face, our experience and range of work will suit your needs.</p>
+                          <p class="lead">
+                          <a class="btn btn-primary btn-lg" href="events" role="button">Learn more</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-7">
+                  <div class="h-100">
+                    <div id="carouselExampleIndicators" class="carousel slide h-100" style="" data-ride="carousel" data-interval="3000">
+                      <!-- max-width 450px-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      </ol>
+                      <div class="carousel-inner h-100" role="listbox">
+                        <div class="row no-gutters h-100 align-items-center carousel-item active" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0301.jpg" alt="First slide" style="width: 100%">
+                          </div>
+                        </div>
+                        <div class="row no-gutters h-100 align-items-center carousel-item" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0300.jpg" alt="Second slide" style="width: 100%">
+                          </div>
+                        </div>
+                        <div class="row no-gutters h-100 align-items-center carousel-item" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0298.jpg" alt="Third slide" style="width: 100%">
+                          </div>
+                        </div>
+                        <div class="row no-gutters h-100 align-items-center carousel-item" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0295.jpg" alt="Fourth slide" style="width: 100%">
+                          </div>
+                        </div>
+                        <div class="row no-gutters h-100 align-items-center carousel-item" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0293.jpg" alt="Fifth slide" style="width: 100%">
+                          </div>
+                        </div>
+                        <div class="row no-gutters h-100 align-items-center carousel-item" style="background-color: black">
+                          <div class="col">
+                            <img class="d-block img-fluid" src="img/img_0289.jpg" alt="Sixth slide" style="width: 100%">
+                          </div>
+                        </div>
+                      </div>
+
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="col-7 carousel slide" data-ride="carousel" data-interval="3000">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="row no-gutters carousel-item active">
-              <div class="col">
-                <img class="d-block img-fluid" src="img/man_tiara.jpg" alt="First slide">
-              </div>
-            </div>
-            <div class="row no-gutters carousel-item">
-              <div class="col">
-                <img class="d-block img-fluid" src="img/pirate_boy.jpg" alt="Second slide">
-              </div>
-            </div>
-            <div class="row no-gutters carousel-item">
-              <div class="col">
-                <img class="d-block img-fluid" src="img/dead_couple.jpg" alt="Third slide">
-              </div>
-            </div>
-            <div class="row no-gutters carousel-item">
-              <div class="col">
-                <img class="d-block img-fluid" src="img/kambria_princess.jpg" alt="Fourth slide">
-              </div>
-            </div>
-            <div class="row no-gutters carousel-item">
-              <div class="col">
-                <img class="d-block img-fluid" src="img/blue_butterfly.jpg" alt="Fifth slide">
-              </div>
-            </div>
-          </div>
+        <!--<div class="col-1">
+          Right Column
+        </div>-->
 
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
       </div>
     </div>
-
   </body>
 </html>
